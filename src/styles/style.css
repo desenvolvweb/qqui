@@ -1,22 +1,30 @@
-@import 'setup.css';
-@import 'hint.css';
+@import "setup.css";
+@import "hint.css";
 
-$color1: #2B54D0;
-$color2: #1A8896;
-$color3: #01B0C5;
-$color4: #53EBF3;
-$color5: #B4B9BC;
-$color6: #FDFDFD;
+$color1: #2b54d0;
+$color2: #1a8896;
+$color3: #01b0c5;
+$color4: #53ebf3;
+$color5: #b4b9bc;
+$color6: #fdfdfd;
 
-$baseFont: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$headerFont: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$baseFont: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$headerFont: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-body { margin: 0 }
-img { max-width: 100% }
-svg { max-height: 100% }
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+svg {
+  max-height: 100%;
+}
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
 input,
@@ -34,21 +42,21 @@ label {
   vertical-align: middle;
 }
 
-input[type=text],
-input[type=date],
-input[type=datetime],
-input[type=datetime-local],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=time],
-input[type=url],
-input[type=week] {
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
   /*height: 2.25rem;*/
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   vertical-align: middle;
   -webkit-appearance: none;
 }
@@ -65,7 +73,7 @@ select:not([multiple]) {
 
 textarea {
   line-height: 1.75;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 table {
@@ -82,28 +90,37 @@ th {
 
 th,
 td {
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   line-height: inherit;
 }
 
-th { vertical-align: bottom }
-td { vertical-align: top }
+th {
+  vertical-align: bottom;
+}
+td {
+  vertical-align: top;
+}
 
 body {
   font-size: 1.6rem;
   line-height: 1.7;
   font-family: $baseFont;
   font-weight: 300;
-  background: #EAEEF1;
+  background: #eaeef1;
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $headerFont;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -111,13 +128,17 @@ p {
   margin-bottom: 1rem;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-pre, code, samp {
-  font-family: 'Source Code Pro', Consolas, monospace;
+pre,
+code,
+samp {
+  font-family: "Source Code Pro", Consolas, monospace;
   font-size: inherit;
 }
 
@@ -127,16 +148,30 @@ pre {
   overflow-x: scroll;
 }
 
-h1 { font-size: 9rem; letter-spacing: -10px; margin-bottom: 1.5rem; }
-h2 { font-size: 3rem }
-h3 { font-size: 2.7rem }
-h4 { font-size: 2.3rem }
-h5 { font-size: .875rem }
-h6 { font-size: .75rem }
+h1 {
+  font-size: 9rem;
+  letter-spacing: -10px;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.7rem;
+}
+h4 {
+  font-size: 2.3rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
 
 body {
   color: #111;
-  background-color: #EAEEF1;
+  background-color: #eaeef1;
   display: flex;
   flex-flow: row wrap;
 }
@@ -156,7 +191,8 @@ a:hover {
   text-decoration: underline;
 }
 
-pre, code {
+pre,
+code {
   background-color: transparent;
   border-radius: 3px;
 }
@@ -167,12 +203,12 @@ pre, code {
 }
 
 header.top {
-  background: linear-gradient(45deg, #354052, #28313D);
+  background: linear-gradient(45deg, #354052, #28313d);
   color: white;
   flex: 1 0 180px;
   position: relative;
   .logo {
-    background: #4B73EB;
+    background: #4b73eb;
     display: inline-block;
     width: 100%;
     padding: 1.5rem 1.8rem;
@@ -197,7 +233,7 @@ header.top {
       padding: 14px 18px;
       font-size: 1.2rem;
       line-height: 1.4;
-      background: #4B73EB;
+      background: #4b73eb;
       cursor: pointer;
     }
   }
@@ -206,7 +242,7 @@ header.top {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: #28313D;
+    background: #28313d;
     text-align: center;
     p {
       text-align: center;
@@ -244,8 +280,7 @@ section.appBody {
   }
 }
 
-@media only screen 
-  and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   section.appBody {
     display: block;
   }
@@ -255,15 +290,15 @@ section.appBody {
   display: block;
   margin: 2rem 0;
   label {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+    font-size: 1.6rem;
     font-family: $headerFont;
-    color: #9E9E9E;
+    color: #9e9e9e;
     letter-spacing: 1px;
   }
-  input, select {
+  input,
+  select {
     display: block;
-    border: 3px solid #D2DAE2;
+    border: 3px solid #d2dae2;
     padding: 1.3rem;
     width: 100%;
     margin: 1rem 0;
@@ -279,17 +314,18 @@ section.appBody {
     background-position: 95% center;
     background-repeat: no-repeat;
     cursor: pointer;
+    background-size: 18px 28px;
   }
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-input[type=submit].submit {
+input[type="submit"].submit {
   font-size: 1.4rem;
   background: #354052;
   text-transform: uppercase;
@@ -302,25 +338,25 @@ input[type=submit].submit {
   letter-spacing: 1px;
   /*border-radius: 5px;*/
   &:hover {
-    background: rgba(0,0,0,0.05);
-    border: 2px solid rgba(0,0,0,0.4);
-    color: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
   }
 }
 
 section.equationDisplay {
   margin-top: 2.5rem;
   padding-bottom: 3.5rem;
-  border-bottom: 1px solid #D2DAE2;
+  border-bottom: 1px solid #d2dae2;
   code {
     padding: 5rem 2.5rem;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.2); 
-    border: 1px solid rgba(0,0,0,0.2); 
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background: white;
     color: #888;
     display: block;
     font-weight: 300;
-    font-family: "source-code-pro",sans-serif;
+    font-family: "source-code-pro", sans-serif;
   }
 }
 
@@ -353,7 +389,7 @@ section.itemList {
       margin-bottom: 10px;
       width: calc(25% - 10px);
       height: 100px;
-      background: #4B73EB;
+      background: #4b73eb;
       transition: all 0.7s;
       border-radius: 3px;
     }
@@ -371,14 +407,18 @@ section.itemList {
 
 .hint {
   background: #333;
-  border-radius: 50%;
-  width: 20px;
-  height: 21px;
-  text-align: center;
+  border-radius: 999px;
   color: white;
-  padding: 0 2px 0 1px;
-  letter-spacing: -1px;
-  &:after {
+  height: 21px;
+  line-height: 1.4;
+  text-align: center;
+  translate: 0 2px;
+  width: 21px;
+  z-index: 1;
+
+  &::after {
+    font-size: 1.6rem;
+    font-weight: normal;
     letter-spacing: 0;
   }
 }
@@ -396,7 +436,7 @@ section.itemList {
   z-index: 99999;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   .lightboxInner {
     text-align: center;
@@ -425,7 +465,7 @@ section.itemList {
       margin-bottom: 15px;
     }
     section.content {
-       padding: 1rem 3rem 2rem;
+      padding: 1rem 3rem 2rem;
     }
     h2 {
       font-size: 3rem;
@@ -445,7 +485,7 @@ section.itemList {
       margin: 0 auto;
       padding: 10px;
       margin-bottom: 25px;
-      box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
     }
     p {
       line-height: 1.4;
@@ -470,4 +510,15 @@ section.itemList {
   }
 }
 
-
+/* @see https://github.com/twbs/bootstrap/blob/main/scss/mixins/_visually-hidden.scss */
+.is-visually-hidden {
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  display: block;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}

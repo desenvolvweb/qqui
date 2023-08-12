@@ -10,69 +10,63 @@ html(lang="en")
 				try{Typekit.load();}catch(e){}
 		link(href="styles/style.css", rel='stylesheet')
 		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet")
-		meta(name='keywords', content='Quantity Query, Quantity Ordering, Drew Minns, CSS')
-		meta(name='description', content='A tool to help build Quantity Queries for your projects')
-		meta(name='author', content='Drew Minns')
-		meta(property='og:title', content='QQ - Quantity Queries Builder')
+		meta(name='keywords', content='Quantity Query, Quantity Ordering, Conditional CSS, CSS')
+		meta(name='description', content='Ferramenta para montar Quantity Queries em CSS')
+		meta(name='author', content='dpw')
+		meta(property='og:title', content='Quantity Queries Builder')
 		meta(property='og:type', content='website')
-		meta(property='og:url', content='https://quantityqueries.com')
+		meta(property='og:url', content='https://quantityqueries.desenvolvimentoparaweb.com/')
 		meta(property='og:image', content='https://quantityqueries.com/images/icon.jpg')
-		meta(property='og:site_name', content='QQ - Quantity Queries Builder')
-		meta(property='og:description', content='A tool to help build Quantity Queries for your projects')
+		meta(property='og:site_name', content='Quantity Queries Builder')
+		meta(property='og:description', content='Ferramenta para montar Quantity Queries em CSS')
+		<!-- Google tag (gtag.js) -->
+		script(src="https://www.googletagmanager.com/gtag/js?id=G-GT98RB8PTX", async)
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GT98RB8PTX');
 		body
-		a(href='https://github.com/drewminns/qqui')
-			img(style='position: absolute; top: 0; right: 0; border: 0;', src='https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png')
 
 		header.top
-			//- .wrapper
 			.logo
 				h1 QQ
+					span.is-visually-hidden - Quantity Queries Builder
 			.details
-				p A tool to help build Quantity Queries for your projects
-				p.explain What is a quantity query?
+				p Ferramenta para montar Quantity Queries em CSS
+				p.explain O que é uma quantity query?
 			.attrib
-				p By&nbsp;
+				p 
+					small Um oferecimento&nbsp;
+						a(href="https://desenvolvimentoparaweb.com/")
+							img(style='width: 50px', src='https://desenvolvimentoparaweb.com/app/themes/dpw2019/dist/images/desenvolvimento-para-web-logo_9b02c264.png')
+				p
+					a.twitter-share-button(href='https://twitter.com/share', data-text="Conheça essa ferramenta para montar Quantity Queries em CSS", data-via='desenvolvweb') Compartilhar
+					script.
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+				p
+					small(style='font-size: 10px') Criado por&nbsp;
 						a(href="https://drewminns.com") drewminns
-				p Follow me&nbsp;
-						a(href="https://twitter.com/drewisthe") @drewisthe
-
-				a.twitter-share-button(href='https://twitter.com/share', data-text="QQ - a tool to create and test quantity queries", data-via='drewisthe') Share
-				script.
-					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		block content
 		.lightbox#lightbox
 			.lightboxInner
 				.closeButton
 					i.fa.fa-times
 				header.inner
-					h2 What are Quantity Queries?
+					h2 O que são Quantity Queries em CSS?
 				section.content
-					p A quantity query is a complex CSS selector that allows styles to be applied to elements based on the number of siblings.
-					h4 At Least
-					p Styles are applied to all elements when there are <strong>at least</strong> 5 number of items and siblings present.
+					p Uma quantity query (consulta de quantidade) é um seletor CSS complexo que permite que estilos sejam aplicados a elementos com base no número de irmãos.
+					h4 Pelo Menos
+					p Estilos são aplicados a todos os elementos quando há <strong>pelo menos</strong> 5 itens e irmãos presentes.
 					code .item:nth-last-child(n+5):first-child, .item:nth-last-child(n+5):first-child ~ .item {}
-					h4 At Most
-					p Styles are applied to all elements when there are <strong>at most</strong>  10 items and siblings present.
-					code .item:nth-last-child(-n+10):first-child, .item:nth-last-child(-n+10):first-child ~ .item { }
-					h4 Between
-					p The best of both worlds. Styles are applied when the number of elements is <strong>between</strong> 3 and 5.
-					code .item:nth-last-child(n+3):nth-last-child(-n+5):first-child, .item:nth-last-child(n+3):nth-last-child(-n+5):first-child ~ .item { }
-					h3 Need more?
-					p	Quantity Queries are getting some traction in the industry. This site was developed as a companion piece to my article on&nbsp;
-							a(href='https://www.smashingmagazine.com/2015/07/14/quantity-ordering-with-css/') Smashing Magazine
-							| . The article and this site could not have been possible however without the help and thoughts of&nbsp;
-							a(href='http://www.heydonworks.com/') Heydon Pickering&nbsp;
-							|  and his article on&nbsp;
-							a(href='http://alistapart.com/article/quantity-queries-for-css') A List Apart
-							| .
+					h4 No Máximo
+					p Estilos são aplicados a todos os elementos quando há <strong>no máximo</strong> 10 itens e irmãos presentes.
+					code .item:nth-last-child(-n+10):first-child, .item:nth-last-child(-n+10):first-child ~ .item {}
+					h4 Entre
+					p Estilos são aplicados quando o número de elementos está <strong>entre</strong> 3 e 5.
+					code .item:nth-last-child(n+3):nth-last-child(-n+5):first-child, .item:nth-last-child(n+3):nth-last-child(-n+5):first-child ~ .item {}
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js")
 		script(src="scripts/main.min.js")
-		script.
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-65097717-1', 'auto');
-			ga('send', 'pageview');
+
